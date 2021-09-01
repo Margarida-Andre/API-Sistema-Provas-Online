@@ -1,0 +1,86 @@
+const Sequelize = require("sequelize");
+const dbConfig = require("../config/database");
+
+const Provincia = require("../models/Provincia");
+const Municipio = require("../models/Municipio");
+const DistritoUrbano = require("../models/DistritoUrbano");
+const Bairro = require("../models/Bairro");
+const Endereco = require("../models/Endereco");
+const AreaCurso = require("../models/areaCurso");
+const Genero = require("../models/Genero");
+const GrauAcademico = require("../models/grauAcademico");
+const TipoContacto = require("../models/tipoContacto");
+const TipoProva = require("../models/tipoProva");
+const Curso = require("../models/Curso");
+const Turma = require("../models/Turma");
+const Instituicao = require("../models/Instituicao");
+const Estudante = require("../models/Estudante");
+const Professor = require("../models/Professor");
+const ContactoEst = require("../models/ContactoEst");
+const ContactoProf = require("../models/ContactoProf");
+const Prova = require("../models/Prova");
+const Disciplina = require("../models/Disciplina");
+const DirectorTurma = require("../models/directorTurma");
+const Pergunta = require("../models/Pergunta");
+const Resposta = require("../models/Resposta");
+const SAProvas = require("../models/sistemaamericanoProvas");
+const SAQuestoes = require("../models/sistemaamericanoQuestoes");
+const Matricula = require("../models/Matriculas");
+
+const connection = new Sequelize(dbConfig);
+
+//Connection
+Provincia.init(connection);
+Municipio.init(connection);
+DistritoUrbano.init(connection);
+Bairro.init(connection);
+Endereco.init(connection);
+AreaCurso.init(connection);
+Genero.init(connection);
+GrauAcademico.init(connection);
+TipoContacto.init(connection);
+TipoProva.init(connection);
+Curso.init(connection);
+Turma.init(connection);
+Instituicao.init(connection);
+Estudante.init(connection);
+Professor.init(connection);
+ContactoEst.init(connection);
+ContactoProf.init(connection);
+Prova.init(connection);
+Disciplina.init(connection);
+DirectorTurma.init(connection);
+Prova.init(connection);
+Pergunta.init(connection);
+Resposta.init(connection);
+SAProvas.init(connection);
+SAQuestoes.init(connection);
+Matricula.init(connection);
+
+//Association
+Provincia.associate(connection.models);
+Municipio.associate(connection.models);
+DistritoUrbano.associate(connection.models);
+Bairro.associate(connection.models);
+Endereco.associate(connection.models);
+AreaCurso.associate(connection.models);
+Curso.associate(connection.models);
+Turma.associate(connection.models);
+GrauAcademico.associate(connection.models);
+Instituicao.associate(connection.models);
+Estudante.associate(connection.models);
+Professor.associate(connection.models);
+ContactoEst.associate(connection.models);
+ContactoProf.associate(connection.models);
+TipoContacto.associate(connection.models);
+Prova.associate(connection.models);
+TipoProva.associate(connection.models);
+Disciplina.associate(connection.models);
+DirectorTurma.associate(connection.models);
+Pergunta.associate(connection.models);
+Resposta.associate(connection.models);
+SAProvas.associate(connection.models);
+SAQuestoes.associate(connection.models);
+Matricula.associate(connection.models);
+
+module.exports = connection;

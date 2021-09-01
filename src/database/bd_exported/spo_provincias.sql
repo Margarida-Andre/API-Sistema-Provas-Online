@@ -1,0 +1,53 @@
+-- MySQL dump 10.13  Distrib 8.0.22, for Win64 (x86_64)
+--
+-- Host: localhost    Database: spo
+-- ------------------------------------------------------
+-- Server version	5.7.31
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!50503 SET NAMES utf8 */;
+/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+/*!40103 SET TIME_ZONE='+00:00' */;
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+--
+-- Table structure for table `provincias`
+--
+
+DROP TABLE IF EXISTS `provincias`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `provincias` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `nome` varchar(30) NOT NULL,
+  `createdAt` datetime NOT NULL,
+  `updatedAt` datetime NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=19 DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `provincias`
+--
+
+LOCK TABLES `provincias` WRITE;
+/*!40000 ALTER TABLE `provincias` DISABLE KEYS */;
+INSERT INTO `provincias` VALUES (1,'Luanda','2021-03-08 10:14:36','2021-03-08 10:14:36'),(2,'Bengo','2021-03-08 10:15:41','2021-03-08 10:15:41'),(3,'Benguela','2021-03-08 10:15:50','2021-03-08 10:15:50'),(4,'Bié','2021-03-08 10:16:00','2021-03-08 10:16:00'),(5,'Cabinda','2021-03-08 10:16:08','2021-03-08 10:16:08'),(6,'Cuando-Cubango','2021-03-08 10:16:22','2021-03-08 10:16:22'),(7,'Cuanza Norte','2021-03-08 10:17:26','2021-03-08 10:17:26'),(8,'Cuanza Sul','2021-03-08 10:17:40','2021-03-08 10:17:40'),(9,'Cunene','2021-03-08 10:17:49','2021-03-08 10:17:49'),(10,'Huambo','2021-03-08 10:17:58','2021-03-08 10:17:58'),(11,'Huíla','2021-03-08 10:18:14','2021-03-08 10:18:14'),(12,'Lunda Norte','2021-03-08 10:18:29','2021-03-08 10:18:29'),(13,'Lunda Sul','2021-03-08 10:18:42','2021-03-08 10:18:42'),(14,'Malanje','2021-03-08 10:19:04','2021-03-08 10:19:04'),(15,'Moxico','2021-03-08 10:19:13','2021-03-08 10:19:13'),(16,'Namibe','2021-03-08 10:19:23','2021-03-08 10:19:23'),(17,'Uíge','2021-03-08 10:19:35','2021-03-08 10:19:35'),(18,'Zaire','2021-03-08 10:19:43','2021-03-08 10:19:43');
+/*!40000 ALTER TABLE `provincias` ENABLE KEYS */;
+UNLOCK TABLES;
+/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+
+-- Dump completed on 2021-03-09  5:58:28
